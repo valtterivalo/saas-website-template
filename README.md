@@ -2,8 +2,6 @@
 
 A modern, responsive website for a fictional AI and SaaS company, featuring a clean design, interactive UI elements, and optimized performance.
 
-![Website Preview](https://via.placeholder.com/800x400?text=Website+Preview)
-
 ## 🚀 Features
 
 - **Responsive Design**: Fully responsive layout that works on all device sizes
@@ -52,7 +50,7 @@ A modern, responsive website for a fictional AI and SaaS company, featuring a cl
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/modern-ai-saas-website.git
+   git clone https://github.com/valtterivalo/modern-ai-saas-website.git
    ```
 
 2. Navigate to the project directory:
