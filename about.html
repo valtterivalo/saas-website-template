@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Sola Technologies</title>
+    <meta name="description" content="Learn about Sola Technologies, our mission, vision, and the team behind our innovative AI solutions.">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-sans text-black bg-white">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <nav class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <img src="assets/images/logo.svg" alt="Sola Technologies Logo" class="h-10">
+                        <span class="ml-3 text-2xl font-bold text-black">Sola</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-black hover:text-orange-500 transition-colors font-medium">Home</a>
+                    <a href="about.html" class="text-orange-500 font-medium">About</a>
+                    <a href="services.html" class="text-black hover:text-orange-500 transition-colors font-medium">Services</a>
+                    <a href="career.html" class="text-black hover:text-orange-500 transition-colors font-medium">Careers</a>
+                    <a href="contact.html" class="text-black hover:text-orange-500 transition-colors font-medium">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button type="button" class="text-black hover:text-orange-500 focus:outline-none" id="mobile-menu-button">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="index.html" class="block px-3 py-2 text-black hover:text-orange-500 transition-colors font-medium">Home</a>
+                    <a href="about.html" class="block px-3 py-2 text-orange-500 font-medium">About</a>
+                    <a href="services.html" class="block px-3 py-2 text-black hover:text-orange-500 transition-colors font-medium">Services</a>
+                    <a href="career.html" class="block px-3 py-2 text-black hover:text-orange-500 transition-colors font-medium">Careers</a>
+                    <a href="contact.html" class="block px-3 py-2 text-black hover:text-orange-500 transition-colors font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-20 md:py-28 bg-cream-color relative overflow-hidden">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-fade-in">About <span class="text-orange-500">Sola Technologies</span></h1>
+                <p class="text-xl text-gray-700 max-w-3xl mx-auto mb-10 animate-slide-up">Pioneering AI-powered solutions that transform businesses and shape the future of technology.</p>
+            </div>
+        </div>
+        <div class="absolute -bottom-16 right-0 left-0 h-32 bg-white transform -skew-y-3"></div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="py-16 md:py-24">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-12">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-orange-500 rounded-lg transform -rotate-3 scale-105 opacity-20"></div>
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Sola Technologies Team" class="relative z-10 rounded-lg shadow-lg w-full">
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 reveal">Our Story</h2>
+                    <p class="text-lg text-gray-700 mb-6 reveal">Founded in 2020, Sola Technologies began with a simple yet powerful vision: to make artificial intelligence accessible, practical, and beneficial for businesses of all sizes. Our founders, a team of AI researchers and industry veterans, recognized that while AI held tremendous potential, many organizations struggled to implement it effectively.</p>
+                    <p class="text-lg text-gray-700 mb-6 reveal">The name "Sola" comes from the Latin word for sun, representing our mission to illuminate the path forward with technology that brings clarity, warmth, and growth to our clients' businesses.</p>
+                    <p class="text-lg text-gray-700 reveal">Today, we're proud to serve clients across various industries, from healthcare and finance to retail and manufacturing, helping them harness the power of AI to solve complex problems and achieve unprecedented results.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Mission Section -->
+    <section class="py-16 md:py-24 bg-cream-color">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-8 reveal">Our Mission & Vision</h2>
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4 text-orange-500 reveal">Mission</h3>
+                    <p class="text-lg text-gray-700 mb-8 reveal">To democratize artificial intelligence by creating intuitive, powerful, and ethical AI solutions that empower organizations to innovate, grow, and thrive in an increasingly complex digital landscape.</p>
+                    
+                    <h3 class="text-2xl font-bold mb-4 text-orange-500 reveal">Vision</h3>
+                    <p class="text-lg text-gray-700 reveal">A world where AI enhances human capabilities, drives sustainable growth, and creates positive impact across all sectors of society and business.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Values Section -->
+    <section class="py-16 md:py-24">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center reveal">Our Core Values</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Value 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover-card">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Innovation</h3>
+                    <p class="text-gray-700">We constantly push the boundaries of what's possible, embracing new ideas and technologies to create cutting-edge solutions.</p>
+                </div>
+                <!-- Value 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover-card">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Collaboration</h3>
+                    <p class="text-gray-700">We believe in the power of teamwork, fostering an environment where diverse perspectives come together to create exceptional results.</p>
+                </div>
+                <!-- Value 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover-card">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Integrity</h3>
+                    <p class="text-gray-700">We uphold the highest ethical standards in all that we do, building trust through transparency, honesty, and responsible AI practices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-16 md:py-24 bg-cream-color">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center reveal">Our Leadership Team</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Team Member 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Sarah Johnson" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-1">Sarah Johnson</h3>
+                        <p class="text-orange-500 mb-4">CEO & Co-Founder</p>
+                        <p class="text-gray-700">Former AI research lead at MIT with 15+ years of experience in machine learning and business leadership.</p>
+                    </div>
+                </div>
+                <!-- Team Member 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Michael Chen" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-1">Michael Chen</h3>
+                        <p class="text-orange-500 mb-4">CTO & Co-Founder</p>
+                        <p class="text-gray-700">Former lead engineer at Google AI with expertise in natural language processing and computer vision.</p>
+                    </div>
+                </div>
+                <!-- Team Member 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Alicia Rodriguez" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-1">Alicia Rodriguez</h3>
+                        <p class="text-orange-500 mb-4">Chief Product Officer</p>
+                        <p class="text-gray-700">Product strategy expert with experience building AI-driven products at leading tech companies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section class="py-16 bg-black text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Business?</h2>
+            <p class="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">Let us help you leverage the power of AI to drive innovation and growth.</p>
+            <a href="contact.html" class="inline-block btn-accent px-8 py-3 rounded-md">Contact Us Today</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white text-black border-t border-gray-200">
+        <div class="container mx-auto px-4 py-12">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <a href="index.html" class="flex items-center">
+                        <img src="assets/images/logo.svg" alt="Sola Technologies Logo" class="h-8">
+                        <span class="ml-3 text-xl font-bold text-black">Sola Technologies</span>
+                    </a>
+                    <p class="mt-2 text-sm text-gray-500">Powering Innovation with AI</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="index.html" class="hover:text-orange-500 transition-colors">Home</a>
+                    <a href="about.html" class="hover:text-orange-500 transition-colors">About</a>
+                    <a href="services.html" class="hover:text-orange-500 transition-colors">Services</a>
+                    <a href="career.html" class="hover:text-orange-500 transition-colors">Careers</a>
+                    <a href="contact.html" class="hover:text-orange-500 transition-colors">Contact</a>
+                </div>
+            </div>
+            <div class="border-t border-gray-200 mt-8 pt-8 text-sm text-center">
+                <p>&copy; 2025 Sola Technologies. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cursor element -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-dot"></div>
+
+    <!-- Scripts -->
+    <script src="js/components.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sun gradient -->
+  <defs>
+    <radialGradient id="sunGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#FF9F43" />
+      <stop offset="100%" stop-color="#FF7700" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Main sun circle -->
+  <circle cx="20" cy="20" r="16" fill="url(#sunGradient)" />
+  
+  <!-- Dotted outline -->
+  <circle cx="20" cy="20" r="18" fill="none" stroke="#FFA500" stroke-width="0.5" stroke-dasharray="2 2" />
+  
+  <!-- White waves through the sun -->
+  <path d="M2,20 C8,13 14,23 20,16 C26,9 32,27 38,20" 
+        fill="none" 
+        stroke="white" 
+        stroke-width="2.5"
+        stroke-linecap="round" />
+        
+  <path d="M2,25 C8,19 14,29 20,22 C26,15 32,33 38,25" 
+        fill="none" 
+        stroke="white" 
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-opacity="0.7" />
+</svg> 

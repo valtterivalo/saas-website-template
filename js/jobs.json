@@ -1,0 +1,115 @@
+{
+  "jobs": [
+    {
+      "id": "ai-research-scientist",
+      "title": "AI Research Scientist",
+      "department": "Research & Development",
+      "location": "San Francisco, CA",
+      "type": "Full-time",
+      "description": "We're looking for an AI Research Scientist to join our team and help push the boundaries of what's possible with artificial intelligence.",
+      "responsibilities": [
+        "Conduct cutting-edge research in machine learning, deep learning, and natural language processing",
+        "Develop novel algorithms and models to solve complex problems",
+        "Collaborate with engineering teams to implement research findings into products",
+        "Publish research findings in top-tier conferences and journals",
+        "Stay current with the latest advancements in AI research"
+      ],
+      "requirements": [
+        "Ph.D. in Computer Science, Machine Learning, or related field",
+        "Strong publication record in top-tier AI conferences (NeurIPS, ICML, ICLR, etc.)",
+        "Experience with deep learning frameworks (PyTorch, TensorFlow)",
+        "Excellent programming skills in Python",
+        "Strong mathematical background in linear algebra, calculus, and statistics"
+      ],
+      "preferred": [
+        "Experience with reinforcement learning",
+        "Background in computer vision or natural language processing",
+        "Industry experience applying AI to real-world problems"
+      ]
+    },
+    {
+      "id": "frontend-developer",
+      "title": "Senior Frontend Developer",
+      "department": "Engineering",
+      "location": "Remote",
+      "type": "Full-time",
+      "description": "Join our engineering team to build beautiful, responsive, and intuitive user interfaces for our AI-powered products.",
+      "responsibilities": [
+        "Design and implement user interfaces for web applications",
+        "Collaborate with designers, product managers, and backend engineers",
+        "Write clean, maintainable, and efficient code",
+        "Optimize applications for maximum speed and scalability",
+        "Ensure cross-browser compatibility and responsiveness"
+      ],
+      "requirements": [
+        "5+ years of experience in frontend development",
+        "Proficiency in JavaScript, HTML5, and CSS3",
+        "Experience with modern frontend frameworks (React, Vue, or Angular)",
+        "Understanding of responsive design principles",
+        "Knowledge of browser rendering behavior and performance"
+      ],
+      "preferred": [
+        "Experience with TypeScript",
+        "Familiarity with UI/UX design principles",
+        "Knowledge of state management patterns",
+        "Experience with testing frameworks"
+      ]
+    },
+    {
+      "id": "data-engineer",
+      "title": "Data Engineer",
+      "department": "Data",
+      "location": "Boston, MA",
+      "type": "Full-time",
+      "description": "We're seeking a Data Engineer to help build and maintain our data infrastructure, ensuring our AI systems have access to high-quality data.",
+      "responsibilities": [
+        "Design, build, and maintain data pipelines",
+        "Develop ETL processes to extract data from various sources",
+        "Implement data quality checks and monitoring",
+        "Collaborate with data scientists and ML engineers",
+        "Optimize database performance and scalability"
+      ],
+      "requirements": [
+        "3+ years of experience in data engineering",
+        "Proficiency in SQL and Python",
+        "Experience with data processing frameworks (Spark, Kafka)",
+        "Knowledge of database systems (PostgreSQL, MongoDB)",
+        "Understanding of data modeling and warehousing concepts"
+      ],
+      "preferred": [
+        "Experience with cloud platforms (AWS, GCP, Azure)",
+        "Knowledge of containerization and orchestration (Docker, Kubernetes)",
+        "Familiarity with data governance and security best practices",
+        "Experience with real-time data processing"
+      ]
+    },
+    {
+      "id": "product-manager",
+      "title": "Product Manager, AI Solutions",
+      "department": "Product",
+      "location": "New York, NY",
+      "type": "Full-time",
+      "description": "We're looking for a Product Manager to lead the development of our AI-powered solutions, translating customer needs into product features.",
+      "responsibilities": [
+        "Define product vision, strategy, and roadmap",
+        "Gather and prioritize product requirements",
+        "Work closely with engineering, design, and marketing teams",
+        "Analyze market trends and competitive landscape",
+        "Collect and analyze user feedback to inform product decisions"
+      ],
+      "requirements": [
+        "4+ years of experience in product management",
+        "Experience with AI or SaaS products",
+        "Strong analytical and problem-solving skills",
+        "Excellent communication and presentation abilities",
+        "Ability to translate technical concepts to non-technical stakeholders"
+      ],
+      "preferred": [
+        "Technical background or experience in software development",
+        "MBA or technical degree",
+        "Experience with agile development methodologies",
+        "Understanding of AI/ML concepts and applications"
+      ]
+    }
+  ]
+} 

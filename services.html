@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Sola Technologies</title>
+    <meta name="description" content="Discover Sola Technologies' AI-powered solutions including machine learning, data analytics, and custom software development.">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-sans text-black bg-white">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <nav class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <img src="assets/images/logo.svg" alt="Sola Technologies Logo" class="h-10">
+                        <span class="ml-3 text-2xl font-bold text-black">Sola</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-black hover:text-orange-500 transition-colors font-medium">Home</a>
+                    <a href="about.html" class="text-black hover:text-orange-500 transition-colors font-medium">About</a>
+                    <a href="services.html" class="text-orange-500 font-medium">Services</a>
+                    <a href="career.html" class="text-black hover:text-orange-500 transition-colors font-medium">Careers</a>
+                    <a href="contact.html" class="text-black hover:text-orange-500 transition-colors font-medium">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button type="button" class="text-black hover:text-orange-500 focus:outline-none" id="mobile-menu-button">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="index.html" class="block px-3 py-2 text-black hover:text-orange-500 transition-colors font-medium">Home</a>
+                    <a href="about.html" class="block px-3 py-2 text-black hover:text-orange-500 transition-colors font-medium">About</a>
+                    <a href="services.html" class="block px-3 py-2 text-orange-500 font-medium">Services</a>
+                    <a href="career.html" class="block px-3 py-2 text-black hover:text-orange-500 transition-colors font-medium">Careers</a>
+                    <a href="contact.html" class="block px-3 py-2 text-black hover:text-orange-500 transition-colors font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-20 md:py-28 bg-cream-color relative overflow-hidden">
+        <div id="particles-js" class="absolute inset-0 z-0"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-5xl mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-fade-in">Our <span class="text-orange-500">Services</span></h1>
+                <p class="text-xl text-gray-700 max-w-3xl mx-auto mb-10 animate-slide-up">Innovative AI-powered solutions designed to transform your business and drive sustainable growth.</p>
+            </div>
+        </div>
+        <div class="absolute -bottom-16 right-0 left-0 h-32 bg-white transform -skew-y-3"></div>
+    </section>
+
+    <!-- Services Overview Section -->
+    <section class="py-16 md:py-24">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 reveal">Comprehensive AI Solutions</h2>
+                <p class="text-lg text-gray-700 max-w-3xl mx-auto reveal">At Sola Technologies, we provide end-to-end AI solutions tailored to your business needs. Our services are designed to help you harness the power of artificial intelligence to optimize operations, enhance decision-making, and drive innovation.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Service 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover-card">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Machine Learning</h3>
+                    <p class="text-gray-700 mb-6">Develop custom machine learning models that learn from your data to make predictions, automate tasks, and uncover insights.</p>
+                    <ul class="space-y-2 text-gray-700 mb-6">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-orange-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Predictive analytics
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-orange-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Classification systems
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-orange-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Anomaly detection
+                        </li>
+                    </ul>
+                    <a href="#" class="text-orange-500 font-medium hover:underline">Learn more &rarr;</a>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover-card">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Data Analytics</h3>
+                    <p class="text-gray-700 mb-6">Transform raw data into actionable insights with our advanced analytics solutions that help you make data-driven decisions.</p>
+                    <ul class="space-y-2 text-gray-700 mb-6">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-orange-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Business intelligence
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-orange-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Data visualization
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-orange-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Trend analysis
+                        </li>
+                    </ul>
+                    <a href="#" class="text-orange-500 font-medium hover:underline">Learn more &rarr;</a>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover-card">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">AI Development</h3>
+                    <p class="text-gray-700 mb-6">Build custom AI applications and solutions tailored to your specific business needs and industry requirements.</p>
+                    <ul class="space-y-2 text-gray-700 mb-6">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-orange-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Natural language processing
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-orange-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Computer vision
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-orange-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Automation workflows
+                        </li>
+                    </ul>
+                    <a href="#" class="text-orange-500 font-medium hover:underline">Learn more &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advanced Services Section -->
+    <section class="py-16 md:py-24 bg-cream-color">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 reveal">Enterprise AI Solutions</h2>
+                    <p class="text-lg text-gray-700 mb-6 reveal">Our enterprise solutions help large organizations integrate AI into their core business processes, enabling them to scale operations, improve efficiency, and drive innovation.</p>
+                    
+                    <div class="space-y-6">
+                        <!-- Enterprise Feature 1 -->
+                        <div class="flex items-start reveal">
+                            <div class="flex-shrink-0 bg-orange-100 rounded-full p-2 mr-4">
+                                <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">AI Strategy Consulting</h3>
+                                <p class="text-gray-700">Develop a comprehensive AI roadmap aligned with your business goals, identifying key opportunities and implementation strategies.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Enterprise Feature 2 -->
+                        <div class="flex items-start reveal">
+                            <div class="flex-shrink-0 bg-orange-100 rounded-full p-2 mr-4">
+                                <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Custom AI Integration</h3>
+                                <p class="text-gray-700">Seamlessly integrate AI capabilities into your existing systems and workflows with minimal disruption to your operations.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Enterprise Feature 3 -->
+                        <div class="flex items-start reveal">
+                            <div class="flex-shrink-0 bg-orange-100 rounded-full p-2 mr-4">
+                                <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">AI Infrastructure Management</h3>
+                                <p class="text-gray-700">Build and maintain the robust infrastructure needed to support your AI initiatives, from cloud computing to data storage.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-orange-500 rounded-lg transform rotate-3 scale-105 opacity-20"></div>
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Enterprise AI Solutions" class="relative z-10 rounded-lg shadow-lg w-full">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industry Solutions Section -->
+    <section class="py-16 md:py-24">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 reveal">Industry-Specific Solutions</h2>
+                <p class="text-lg text-gray-700 max-w-3xl mx-auto reveal">We understand that different industries have unique challenges and requirements. Our specialized solutions are tailored to address the specific needs of various sectors.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Industry 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <svg class="w-6 h-6 text-orange-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                        </svg>
+                        Healthcare
+                    </h3>
+                    <p class="text-gray-700 mb-4">AI-powered diagnostic tools, patient care optimization, and medical research acceleration to improve healthcare outcomes and efficiency.</p>
+                    <a href="#" class="text-orange-500 font-medium hover:underline">Explore healthcare solutions &rarr;</a>
+                </div>
+                
+                <!-- Industry 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <svg class="w-6 h-6 text-orange-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        Finance
+                    </h3>
+                    <p class="text-gray-700 mb-4">Risk assessment models, fraud detection systems, and automated trading algorithms to enhance financial services and security.</p>
+                    <a href="#" class="text-orange-500 font-medium hover:underline">Explore finance solutions &rarr;</a>
+                </div>
+                
+                <!-- Industry 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <svg class="w-6 h-6 text-orange-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+                        </svg>
+                        Retail
+                    </h3>
+                    <p class="text-gray-700 mb-4">Customer behavior analysis, inventory optimization, and personalized shopping experiences to drive sales and customer satisfaction.</p>
+                    <a href="#" class="text-orange-500 font-medium hover:underline">Explore retail solutions &rarr;</a>
+                </div>
+                
+                <!-- Industry 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <svg class="w-6 h-6 text-orange-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2"></path>
+                        </svg>
+                        Manufacturing
+                    </h3>
+                    <p class="text-gray-700 mb-4">Predictive maintenance, quality control automation, and supply chain optimization to improve operational efficiency.</p>
+                    <a href="#" class="text-orange-500 font-medium hover:underline">Explore manufacturing solutions &rarr;</a>
+                </div>
+                
+                <!-- Industry 5 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <svg class="w-6 h-6 text-orange-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path>
+                        </svg>
+                        Customer Service
+                    </h3>
+                    <p class="text-gray-700 mb-4">Intelligent chatbots, customer sentiment analysis, and automated support systems to enhance customer experiences.</p>
+                    <a href="#" class="text-orange-500 font-medium hover:underline">Explore customer service solutions &rarr;</a>
+                </div>
+                
+                <!-- Industry 6 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <svg class="w-6 h-6 text-orange-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                        </svg>
+                        Security
+                    </h3>
+                    <p class="text-gray-700 mb-4">Threat detection systems, behavioral analytics, and proactive security measures to protect your business from evolving threats.</p>
+                    <a href="#" class="text-orange-500 font-medium hover:underline">Explore security solutions &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section class="py-16 bg-black text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Business?</h2>
+            <p class="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">Let us help you leverage the power of AI to drive innovation and growth.</p>
+            <a href="contact.html" class="inline-block btn-accent px-8 py-3 rounded-md">Contact Us Today</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white text-black border-t border-gray-200">
+        <div class="container mx-auto px-4 py-12">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <a href="index.html" class="flex items-center">
+                        <img src="assets/images/logo.svg" alt="Sola Technologies Logo" class="h-8">
+                        <span class="ml-3 text-xl font-bold text-black">Sola Technologies</span>
+                    </a>
+                    <p class="mt-2 text-sm text-gray-500">Powering Innovation with AI</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="index.html" class="hover:text-orange-500 transition-colors">Home</a>
+                    <a href="about.html" class="hover:text-orange-500 transition-colors">About</a>
+                    <a href="services.html" class="hover:text-orange-500 transition-colors">Services</a>
+                    <a href="career.html" class="hover:text-orange-500 transition-colors">Careers</a>
+                    <a href="contact.html" class="hover:text-orange-500 transition-colors">Contact</a>
+                </div>
+            </div>
+            <div class="border-t border-gray-200 mt-8 pt-8 text-sm text-center">
+                <p>&copy; 2025 Sola Technologies. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cursor element -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-dot"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 

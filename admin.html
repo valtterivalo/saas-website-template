@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Sola Technologies</title>
+    <meta name="description" content="Admin panel for Sola Technologies website.">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-sans text-black bg-gray-100">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <nav class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <img src="assets/images/logo.svg" alt="Sola Technologies Logo" class="h-10">
+                        <span class="ml-3 text-2xl font-bold text-black">Sola</span>
+                    </a>
+                    <span class="ml-4 text-sm bg-gray-200 px-2 py-1 rounded">Admin Panel</span>
+                </div>
+                <div>
+                    <a href="index.html" class="text-black hover:text-orange-500 transition-colors font-medium">Back to Website</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Admin Dashboard -->
+    <section class="py-10">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl font-bold mb-8">Job Listings Management</h1>
+            
+            <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
+                <div class="flex justify-between items-center mb-6">
+                    <h2 class="text-xl font-bold">Current Job Listings</h2>
+                    <button id="add-job-btn" class="bg-orange-500 text-white px-4 py-2 rounded-md hover:bg-orange-600 transition-colors">
+                        Add New Job
+                    </button>
+                </div>
+                
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white">
+                        <thead>
+                            <tr class="bg-gray-100 text-gray-600 uppercase text-sm leading-normal">
+                                <th class="py-3 px-6 text-left">Title</th>
+                                <th class="py-3 px-6 text-left">Department</th>
+                                <th class="py-3 px-6 text-left">Location</th>
+                                <th class="py-3 px-6 text-left">Type</th>
+                                <th class="py-3 px-6 text-center">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="job-listings-table" class="text-gray-600 text-sm">
+                            <!-- Job listings will be loaded here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Form Modal -->
+    <div id="job-form-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4 hidden">
+        <div class="bg-white rounded-lg shadow-xl w-full max-w-4xl max-h-90vh overflow-y-auto">
+            <div class="flex justify-between items-start p-6 border-b border-gray-200">
+                <h2 id="modal-title" class="text-2xl font-bold">Add New Job</h2>
+                <button class="close-modal text-gray-400 hover:text-gray-500 focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            
+            <form id="job-form" class="p-6">
+                <input type="hidden" id="job-id" name="job-id">
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label for="job-title" class="block text-sm font-medium text-gray-700 mb-1">Job Title</label>
+                        <input type="text" id="job-title" name="job-title" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-500 focus:border-orange-500" required>
+                    </div>
+                    <div>
+                        <label for="job-department" class="block text-sm font-medium text-gray-700 mb-1">Department</label>
+                        <input type="text" id="job-department" name="job-department" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-500 focus:border-orange-500" required>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label for="job-location" class="block text-sm font-medium text-gray-700 mb-1">Location</label>
+                        <input type="text" id="job-location" name="job-location" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-500 focus:border-orange-500" required>
+                    </div>
+                    <div>
+                        <label for="job-type" class="block text-sm font-medium text-gray-700 mb-1">Job Type</label>
+                        <select id="job-type" name="job-type" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-500 focus:border-orange-500" required>
+                            <option value="Full-time">Full-time</option>
+                            <option value="Part-time">Part-time</option>
+                            <option value="Contract">Contract</option>
+                            <option value="Internship">Internship</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="mb-6">
+                    <label for="job-description" class="block text-sm font-medium text-gray-700 mb-1">Description</label>
+                    <textarea id="job-description" name="job-description" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-500 focus:border-orange-500" required></textarea>
+                </div>
+                
+                <div class="mb-6">
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Responsibilities</label>
+                    <div id="responsibilities-container" class="space-y-2">
+                        <div class="flex items-center">
+                            <input type="text" name="responsibilities[]" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-500 focus:border-orange-500" required>
+                            <button type="button" class="remove-item ml-2 text-red-500 hover:text-red-700">
+                                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <button type="button" id="add-responsibility" class="mt-2 text-sm text-orange-500 hover:text-orange-700">
+                        + Add Responsibility
+                    </button>
+                </div>
+                
+                <div class="mb-6">
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Requirements</label>
+                    <div id="requirements-container" class="space-y-2">
+                        <div class="flex items-center">
+                            <input type="text" name="requirements[]" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-500 focus:border-orange-500" required>
+                            <button type="button" class="remove-item ml-2 text-red-500 hover:text-red-700">
+                                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <button type="button" id="add-requirement" class="mt-2 text-sm text-orange-500 hover:text-orange-700">
+                        + Add Requirement
+                    </button>
+                </div>
+                
+                <div class="mb-6">
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Preferred Qualifications</label>
+                    <div id="preferred-container" class="space-y-2">
+                        <div class="flex items-center">
+                            <input type="text" name="preferred[]" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-500 focus:border-orange-500" required>
+                            <button type="button" class="remove-item ml-2 text-red-500 hover:text-red-700">
+                                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <button type="button" id="add-preferred" class="mt-2 text-sm text-orange-500 hover:text-orange-700">
+                        + Add Preferred Qualification
+                    </button>
+                </div>
+                
+                <div class="flex justify-end space-x-4">
+                    <button type="button" class="close-modal px-4 py-2 border border-gray-300 rounded-md text-gray-700 hover:bg-gray-50">
+                        Cancel
+                    </button>
+                    <button type="submit" class="px-4 py-2 bg-orange-500 text-white rounded-md hover:bg-orange-600">
+                        Save Job
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Delete Confirmation Modal -->
+    <div id="delete-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4 hidden">
+        <div class="bg-white rounded-lg shadow-xl w-full max-w-md">
+            <div class="p-6">
+                <h3 class="text-xl font-bold mb-4">Confirm Deletion</h3>
+                <p class="mb-6">Are you sure you want to delete this job listing? This action cannot be undone.</p>
+                <div class="flex justify-end space-x-4">
+                    <button type="button" class="close-delete-modal px-4 py-2 border border-gray-300 rounded-md text-gray-700 hover:bg-gray-50">
+                        Cancel
+                    </button>
+                    <button type="button" id="confirm-delete" class="px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600">
+                        Delete
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/admin.js"></script>
+</body>
+</html> 
